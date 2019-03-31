@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<script   src="https://code.jquery.com/jquery-3.3.1.js"  
+ integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="  
+ crossorigin="anonymous">
+ </script>
+ <script type="text/javascript" src="script.js"></script>
+ <link rel="stylesheet" href="main.css">
+<title> Ass 5 </title>
+
+</head>
+
+<body>
+
+<h1 id="h1Vaasa"> Survey form for collecting user feedback regarding the quality of life in Vaasa</h1>
+
+<div class="divs">
+    <div class="cls1">
+            <label id="part1"><strong>Part 1 - Basic information</strong> </label> <br>
+        <label id="Gender">Gender</label> 
+        <select id="genderSelect">
+            <option id="Male" value="Male">Male</option>
+            <option id="Female" value="Female">Female</option>
+        </select> <br>
+        <label id="First name">First name </label>  <input type="text" name="first_name" required="required"> <br>
+        <label id="Last name">Last name </label> <input type="text" name="last_name" required="required"> <br>
+        <form oninput="Ages.value = parseInt(Age.value);">
+        <label id="Age">Age</label> <input type="range" id="Age" min="1" max="130" step="1" value="20"> 
+        <output id="Ages" for="Height"></output> <br>
+        <label id="Education">Education</label>
+        <input list="Details" style="width: 150px";>
+            <datalist id="Details">
+                <option id="Primary School" value="Primary School">
+                <option id="Secondary School" value="Secondary School">  
+                <option id="High School" value="High School">
+                <option id="University" value="University">
+            </datalist>
+    </div>
+    <div class="cls2">
+        <label id="part2"><strong>Part 2 - Feedback on infrastructure</strong></label> <br>
+        <textarea rows="4" cols="50">
+            ...
+            </textarea>
+    </div>
+    <div class="cls3">
+        <label id="part3"><strong>Part 3 - Feedback on accommodation</strong></label> <br>
+        <textarea rows="4" cols="50">
+            ...
+            </textarea>
+    </div>
+    <div class="cls4">
+        <label id="part4"><strong>Part 4 - Feedback on transportation</strong></label> <br>
+        <textarea rows="4" cols="50">
+            ...
+            </textarea>
+    </div>
+    <div class="cls5">
+        <label id="part5"><strong>Part 5 - Feedback on education</strong></label> <br>
+        <textarea rows="4" cols="50">
+            ...
+            </textarea>
+    </div>
+    <div class="cls6">
+        <label id="part6"><strong>Part 6 - Feedback on recruitment</strong></label> <br>
+        <textarea rows="4" cols="50">
+            ...
+            </textarea>
+    </div>
+    <div class="cls7">
+        <label id="part7"><strong>Part 7 - Feedback on culture, sports and recreation possibilities</strong></label> <br>
+        <textarea rows="4" cols="50">
+            ...
+            </textarea>
+    </div>
+</div> <br>
+
+<table>
+<tr>
+    <th><a id="prev">PREVIOUS</a></th>
+    <th><a id="next" id="next">NEXT</a></th>
+</tr>
+<tr>
+    <td colspan="2"><a id="confirm" href="#">Confirm your form</a></td> 
+</tr>
+</table>
+
+<div>
+
+    <a href="javascript:toEnglish();">EN</a>
+    <a href="javascript:toFinnish();">FI</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+    #sum1 {
+        color:rgb(233, 69, 69);
+    }
+    #sum2 {
+        color:rgb(76, 190, 30);
+    }
+    #sum3 {
+        color:rgb(24, 248, 218);
+    }
+    canvas {
+      padding: 0;
+      margin: auto;
+      display: block;
+      width: 800px;
+      height: 500px;
+    }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title> Ass 4 </title>
+<link rel="stylesheet" href="main.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+<h1> Create random image with canvas, video and sound inner html</h1>
+
+<details>
+    <summary id="sum1">Draw something here</summary>
+        <select id="mySelect" onchange="drawYouWant()">
+            <option value="Line">Line</option>
+            <option value="Circle">Circle</option>
+            <option value="Linear Gradient">Linear Gradient</option>
+            <option value="Radial Gradient">Radial Gradient</option>
+            <option value="Image">Image</option>
+        </select>
+        <hr>
+        <canvas id="canvas" style="border:1px solid #d3d3d3;">
+            <img id="1" src="janna.jpg">
+            <img id="2" src="jinx.jpg">
+            <img id="3" src="soraka.jpg">
+            <img id="4" src="ahri.jpg">
+        </canvas>
+</details>
+
+<details>
+    <summary id="sum2">Hear something?</summary>
+        <audio controls autoplay>
+            <source src="Geisha - Dino Sor.mp3" type="audio/mpeg"> 
+            Your browser does not support the audio element.
+        </audio>        
+</details>
+
+<details>
+    <summary id="sum3">Watch something?</summary>
+        <video width="13%" height="13%" controls>
+            <source src="20190128_054403_1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>        
+</details>
+</body>
+</html>

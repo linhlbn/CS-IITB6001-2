@@ -1,0 +1,23 @@
+
+    table {
+        border-collapse: collapse;
+        width: auto;
+    }
+    td {
+        border: 2px solid rgb(253, 172, 172);
+        text-align: center;
+        padding: 1px;
+    }
+    tr:nth-child(even) {
+        background-color: #93ffae;
+    }
+    tr:nth-child(odd) {
+        background-color: #9dffef;
+    }
+    body {
+        background-image: url("https://cdn.discordapp.com/attachments/526547888751509534/526548010310565899/cityBackground.jpg");
+        background-size: cover;
+    }
+    header {
+        text-align:center;
+    }

@@ -1,0 +1,61 @@
+<!--This is index.html file -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+
+<body>
+    <h3>Salary Calculator</h3>
+    <form action="Calculate.php" method="POST" autocomplete="on">
+        <table>
+            <tr>
+                <th>First name</th>
+                <td><input type="text" name="first_name" required="required"></td>
+            </tr>
+            <tr>
+                <th>Last name</th>
+                <td><input type="text" name="last_name" required="required"></td>
+            </tr>
+
+            <tr>
+                <th>Job  </th>
+                <td><input type="text" name="job" required="required"></td>
+            </tr>
+
+            <tr>
+                <th>Gross salary &#40;&euro;&#41; </th>
+                <td><input type="number" name="gross_salary" required="required"></td> 
+            </tr>
+
+            <tr>
+                <th>Tax rate &#40;&#37;&#41;</th>
+                <td><input type="number" name="tax" required="required"></td> 
+            
+
+            <tr>
+                <td><input type="submit" name="Calculate" value="Calculate"></td>
+                </td> 
+            </Tr>
+            
+            
+        </table>
+    </form> <hr align="left" width="27%">
+    <form action="Calculate.php" method="POST" autocomplete="on">
+        <table>
+            <tr>
+                <th>Search for more info : </th> 
+                <td colspan="3"> <input type=text name="nameSearch"> <br>
+                <input type="submit" formaction="search.php" name="Search" value="Search">
+                </td>
+            </Tr>        
+        </table>
+    </form>
+
+</body>
+
+</html> 

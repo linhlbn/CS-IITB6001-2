@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BMI</title>
+<link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <header>
+        <h2>Body mass index &#40;BMI&#41; </h2>
+    </header>
+    <main>
+    <details>
+    <summary>Calculate the BMI</summary>
+        <form oninput="
+            BMI.value=(parseFloat(Weight.value)/Math.pow(parseFloat(Height.value),2)).toFixed(1);
+            Wres.value = parseFloat(Weight.value); 
+            Hres.value = parseFloat(Height.value);
+           
+        "> 
+            <table>
+                <tr><td>Weight &#40;kg&#41;</td> 
+                    <td><input type="range" id="Weight" min="1" max="271" step="0.1" value="136"> </td>
+                    <td><output id="Wres" name="Wres" for="Weight"></output> </td> 
+                </tr>
+                <tr><td>Height &#40;m&#41;</td> 
+                    <td><input type="range" id="Height" min="0.2" max="3" step="0.01" value="1.6"></td>
+                    <td><output id="Hres" for="Height"></output></td>
+                </tr>
+                <tr><td>BMI</td> 
+                    <td  colspan="2"><output name="BMI" for="Weight Height"></output> </td>
+                </tr>
+                
+            </table>
+            <br>
+        </form>
+    </details>  
+        
+    </main>
+    <footer>
+        <details>  
+            <summary>BMI Categories: </summary>
+            <table> 
+                <tr><td>Underweight</td><td>under 18.5</td></tr>
+                <tr><td>Normal weight</td><td>18.5–24.9</td></tr>
+                <tr><td>Overweight</td><td>25–29.9</td></tr>
+                <tr><td>Obesity</td><td>over 30</td></tr>
+            </table>
+        </details>
+    </tr footer>
+    <br>
+    <input list="Details" style="width: 150px";>
+    <datalist id="Details">
+        <option value="Underweight: under 18.5">
+        <option value="Normal weight: 18.5–24.9">  
+        <option value="Overweight: 25–29.9">
+        <option value="Obesity: over 30">
+    </datalist>
+</body>
+
+</html>

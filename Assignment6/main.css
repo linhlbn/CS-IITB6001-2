@@ -1,0 +1,24 @@
+
+a:link {
+	background-color: rgb(240, 240, 205);
+	color: rgb(250, 211, 211);
+    padding: 2.5px 5px;
+    text-align: center; 
+    text-decoration: #b7bfcc;
+	display: inline-block;
+	font-size: 14px;
+}
+a:visited {
+    background-color: #b7bfcc;
+}
+a:hover {
+    background-color: rgb(204, 248, 204);
+}
+a:active {
+    background-color: rgb(255, 206, 231);
+} 
+table {
+    border: 1px solid black;
+}
+.lang_switcher{float:left;overflow:hidden;}
+

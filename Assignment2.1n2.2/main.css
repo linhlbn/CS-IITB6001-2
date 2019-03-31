@@ -1,0 +1,16 @@
+
+    table {
+        border-collapse: collapse;
+        width: auto;
+    }
+    td {
+        border: 2px solid rgb(253, 172, 172);
+        text-align: center;
+        padding: 1px;
+    }
+    tr:nth-child(even) {
+        background-color: #93ffae;
+    }
+    tr:nth-child(odd) {
+        background-color: #9dffef;
+    }

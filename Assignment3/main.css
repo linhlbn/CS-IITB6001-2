@@ -1,0 +1,8 @@
+ th, td {
+     padding: 5px;
+     text-align: left;
+ }
+
+ table {
+     border: 1px solid black;
+ }

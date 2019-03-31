@@ -1,0 +1,69 @@
+<!--This is index.html file -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Service Survey</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+
+<body>
+    <h3>Fill out the form with honesty </h3>
+    <form action="register.php" method="get" autocomplete="on">
+        <table>
+            <tr>
+                <th>First name</th>
+                <td><input type="text" name="first_name" required="required"></td>
+            </tr>
+            <tr>
+                <th>Last name</th>
+                <td><input type="text" name="last_name" required="required"></td>
+            </tr>
+
+            <tr>
+                <th>Student ID &#40;1801144&#41;  </th>
+                <td><input type="text" name="studentID" required="required"></td>
+            </tr>
+
+            <tr>
+                <th>Phone number</th>
+                <td><input type="text" name="phoneNumber" required="required"></td>
+            </tr>
+
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="email" autocomplete="on" autofocus="autofocus" required="required"></td>
+            </tr>
+            
+            
+
+            <tr>
+                <th>Services</th>
+                <td colspan="4">
+                    <input type="checkbox" checked name="Services[]" value="Training" required="required">Training
+                    <input type="checkbox" name="Services[]" value="Consultancy">Consultancy
+                    <input type="checkbox" name="Services[]" value="Help Desk Service">Help Desk Service
+                    <input type="checkbox" name="Services[]" value="Programming">Programming 
+                </td>
+            </tr>
+            <tr>
+                <th>Feedback</th>
+                <td colspan="4"> 
+                    <input type="radio" checked name="Feedback" value="Unacceptable">Unacceptable 
+                    <input type="radio" name="Feedback" value="Satisfactory">Satisfactory 
+                    <input type="radio" name="Feedback" value="Good">Good
+                    <input type="radio" name="Feedback" value="Excellent">Excellent
+            </tr>
+            <tr>
+                <td> <textarea width="10%" maxlength="150" name="contentFB"></textarea> </td>
+                <td rowspan="2"><input type="submit" name="Register" value="Register">
+                <input type="submit" formaction="process_feedback.php" name="Submit" value="Feedback">
+                </td>
+            </Tr>
+        </table>
+    </form>
+</body>
+
+</html> 
